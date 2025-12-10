@@ -4,3 +4,623 @@
   gap: 20px;
   padding: 20px;
 }
+
+body {
+  margin: 0;
+  font-family: Arimo, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+/* Main card container */
+.card {
+  width: 100%;
+  max-width: 394.66px;
+  height: 871.22px; /* 526.20 + 345.02 */
+  position: relative;
+  background: white;
+  box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+/* Bottom section */
+.card-bottom {
+  width: 394.66px;
+  height: 345.02px;
+  position: absolute;
+  left: 0;
+  top: 526.2px;
+}
+
+/* Title */
+.card-title-wrapper {
+  width: 354.66px;
+  height: 24px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.card-title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #101828;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+/* Destination */
+.card-destination-wrapper {
+  width: 182.66px;
+  height: 16px;
+  position: absolute;
+  left: 20px;
+  top: 58px;
+}
+
+.card-destination {
+  width: 183px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+  color: #4a5565;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+/* Meta row (duration, pax, price) */
+.card-meta {
+  width: 354.66px;
+  height: 20px;
+  position: absolute;
+  left: 20px;
+  top: 88px;
+}
+
+/* Shared meta item layout */
+.meta-item {
+  height: 20px;
+  position: absolute;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Positioning items */
+.meta-item:first-child {
+  left: 0;
+  top: 0;
+}
+
+.meta-item-pax {
+  left: 73.31px;
+  top: 0;
+}
+
+.meta-item-price {
+  left: 186.61px;
+  top: 0;
+}
+
+/* Generic meta icon wrapper */
+.meta-icon {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Duration icon */
+.meta-icon-duration-inner {
+  width: 2.67px;
+  height: 5.33px;
+  position: absolute;
+  left: 8px;
+  top: 4px;
+  outline: 1.33px #009689 solid;
+  outline-offset: -0.67px;
+}
+
+.meta-icon-duration-outer {
+  width: 13.33px;
+  height: 13.33px;
+  position: absolute;
+  left: 1.33px;
+  top: 1.33px;
+  outline: 1.33px #009689 solid;
+  outline-offset: -0.67px;
+}
+
+/* Pax icon */
+.meta-icon-pax-base {
+  width: 9.33px;
+  height: 4px;
+  position: absolute;
+  left: 1.33px;
+  top: 10px;
+  outline: 1.33px #009689 solid;
+  outline-offset: -0.67px;
+}
+
+.meta-icon-pax-front {
+  width: 2px;
+  height: 5.16px;
+  position: absolute;
+  left: 10.67px;
+  top: 2.08px;
+  outline: 1.33px #009689 solid;
+  outline-offset: -0.67px;
+}
+
+.meta-icon-pax-back {
+  width: 2px;
+  height: 3.91px;
+  position: absolute;
+  left: 12.67px;
+  top: 10.09px;
+  outline: 1.33px #009689 solid;
+  outline-offset: -0.67px;
+}
+
+.meta-icon-pax-head {
+  width: 5.33px;
+  height: 5.33px;
+  position: absolute;
+  left: 3.33px;
+  top: 2px;
+  outline: 1.33px #009689 solid;
+  outline-offset: -0.67px;
+}
+
+/* Price icon */
+.meta-icon-price-inner {
+  width: 8px;
+  height: 9.33px;
+  position: absolute;
+  left: 4px;
+  top: 3.33px;
+  outline: 1.33px #009689 solid;
+  outline-offset: -0.67px;
+}
+
+/* Meta text */
+.meta-text {
+  flex: 1 1 0;
+  height: 20px;
+  position: relative;
+}
+
+.meta-text > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #4a5565;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+/* Description */
+.card-description-wrapper {
+  width: 354.66px;
+  height: 40px;
+  position: absolute;
+  left: 20px;
+  top: 124px;
+  overflow: hidden;
+}
+
+.card-description {
+  width: 344px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #4a5565;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+/* Status row */
+.card-status-row {
+  width: 354.66px;
+  height: 24px;
+  position: absolute;
+  left: 20px;
+  top: 180.02px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Active badge */
+.badge-active {
+  width: 57.44px;
+  height: 24px;
+  position: relative;
+  background: #f0fdf4;
+  border-radius: 33554400px;
+}
+
+.badge-active-text {
+  position: absolute;
+  left: 12px;
+  top: 4px;
+  color: #008236;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  word-wrap: break-word;
+}
+
+/* Created by */
+.card-created-by {
+  width: 126.38px;
+  height: 16px;
+  position: relative;
+}
+
+.card-created-by > div {
+  width: 127px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #6a7282;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  word-wrap: break-word;
+}
+
+/* Inclusions row */
+.card-inclusions {
+  width: 354.66px;
+  height: 37px;
+  position: absolute;
+  left: 20px;
+  top: 224.02px;
+  border-bottom: 1px #f3f4f6 solid;
+}
+
+/* Shared inclusion item */
+.inclusion-item {
+  height: 16px;
+  position: absolute;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Positions */
+.inclusion-item:first-child {
+  left: 0;
+  top: 0;
+}
+
+.inclusion-item-hotel {
+  left: 70.06px;
+  top: 0;
+}
+
+.inclusion-item-tours {
+  left: 133.92px;
+  top: 0;
+}
+
+/* Inclusion icons */
+.inclusion-icon {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Flights icon */
+.inclusion-icon-flight-wing {
+  width: 4px;
+  height: 0.67px;
+  position: absolute;
+  left: 6px;
+  top: 10px;
+  outline: 1.33px #99a1af solid;
+  outline-offset: -0.67px;
+}
+
+.inclusion-icon-flight-body {
+  width: 10.67px;
+  height: 13.33px;
+  position: absolute;
+  left: 2.67px;
+  top: 1.33px;
+  outline: 1.33px #99a1af solid;
+  outline-offset: -0.67px;
+}
+
+/* Hotel icon */
+.inclusion-icon-hotel-base {
+  width: 4px;
+  height: 5.65px;
+  position: absolute;
+  left: 5.17px;
+  top: 5.17px;
+  outline: 1.33px #99a1af solid;
+  outline-offset: -0.67px;
+}
+
+.inclusion-icon-hotel-body {
+  width: 12.13px;
+  height: 12.13px;
+  position: absolute;
+  left: 2px;
+  top: 1.88px;
+  outline: 1.33px #99a1af solid;
+  outline-offset: -0.67px;
+}
+
+/* Tours icon */
+.inclusion-icon-tours-inner {
+  width: 5.65px;
+  height: 5.65px;
+  position: absolute;
+  left: 5.17px;
+  top: 5.17px;
+  outline: 1.33px #99a1af solid;
+  outline-offset: -0.67px;
+}
+
+.inclusion-icon-tours-outer {
+  width: 13.33px;
+  height: 13.33px;
+  position: absolute;
+  left: 1.33px;
+  top: 1.33px;
+  outline: 1.33px #99a1af solid;
+  outline-offset: -0.67px;
+}
+
+/* Inclusions text */
+.inclusion-text {
+  flex: 1 1 0;
+  height: 16px;
+  position: relative;
+}
+
+.inclusion-text > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #6a7282;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  word-wrap: break-word;
+}
+
+/* Actions */
+.card-actions {
+  width: 354.66px;
+  height: 44px;
+  position: absolute;
+  left: 20px;
+  top: 281.02px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Buttons */
+.btn {
+  flex: 1 1 0;
+  height: 44px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.btn-secondary {
+  background: #f9fafb;
+}
+
+.btn-primary {
+  background: #009689;
+}
+
+.btn-icon {
+  width: 44px;
+  height: 40px;
+  padding-top: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background: #f9fafb;
+  border-radius: 10px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 0 0 auto;
+}
+
+/* Button text */
+.btn-text {
+  position: absolute;
+  top: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+.btn-secondary .btn-text {
+  left: 28.11px;
+  color: #364153;
+}
+
+.btn-primary .btn-text {
+  left: 57.47px;
+  color: #ffffff;
+}
+
+/* Icon button dots */
+.btn-icon-inner {
+  align-self: stretch;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-icon-dot {
+  width: 1.67px;
+  height: 1.67px;
+  position: absolute;
+  outline: 1.67px #364153 solid;
+  outline-offset: -0.83px;
+}
+
+.btn-icon-dot-1 {
+  left: 9.17px;
+  top: 9.17px;
+}
+
+.btn-icon-dot-2 {
+  left: 9.17px;
+  top: 3.33px;
+}
+
+.btn-icon-dot-3 {
+  left: 9.17px;
+  top: 15px;
+}
+
+/* Top section (image) */
+.card-top {
+  width: 394.66px;
+  height: 526.2px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+/* Image */
+.card-image {
+  width: 394.66px;
+  height: 526.2px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+}
+
+/* Gradient overlay */
+.card-gradient-overlay {
+  width: 394.66px;
+  height: 526.2px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+/* Text overlay at bottom of image */
+.card-top-text {
+  width: 394.66px;
+  height: 92px;
+  position: absolute;
+  left: 0;
+  top: 434.2px;
+  padding: 20px 20px 0 20px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+/* Location row */
+.card-location-row {
+  align-self: stretch;
+  height: 20px;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Location icon */
+.location-icon {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.location-icon-inner {
+  width: 5.65px;
+  height: 5.65px;
+  position: absolute;
+  left: 5.17px;
+  top: 5.17px;
+  outline: 1.33px #ffffff solid;
+  outline-offset: -0.67px;
+}
+
+.location-icon-outer {
+  width: 13.33px;
+  height: 13.33px;
+  position: absolute;
+  left: 1.33px;
+  top: 1.33px;
+  outline: 1.33px #ffffff solid;
+  outline-offset: -0.67px;
+}
+
+/* Location text */
+.location-text-wrapper {
+  width: 103.13px;
+  height: 20px;
+  position: relative;
+  opacity: 0.9;
+}
+
+.location-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+/* Heading */
+.card-heading-wrapper {
+  align-self: stretch;
+  height: 28px;
+  position: relative;
+}
+
+.card-heading {
+  position: absolute;
+  left: 0;
+  top: 1px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  word-wrap: break-word;
+}
