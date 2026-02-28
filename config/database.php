@@ -2,7 +2,7 @@
 $DB_HOST = 'localhost';
 $DB_PORT = 3306;
 $DB_USER = 'root';
-$DB_PASS = 'password';
+$DB_PASS = 'password2006';
 $DB_NAME = 'cht_updated';
 
 $mysqli = new mysqli($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME, $DB_PORT);
